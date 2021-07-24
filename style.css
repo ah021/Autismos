@@ -142,3 +142,21 @@ body {
   color: white;
   background-image: url(images/s2ep2.jpg);
 }
+
+.submit {
+  width: 150px;
+  height: 30px;
+  margin: 20px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid rgb(94, 84, 233);
+  border-right: 2px solid rgb(94, 84, 233);
+  transition-duration: 0.5s;
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
