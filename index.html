@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Password</title>
+    <title class="title">Password</title>
+    <p class="title" style="font-size: 30pt">Autismos Plus</p>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
       body {
-        background: lightblue;
+        background: rgb(255, 255, 255);
         padding: 30px;
+      }
+      html {
+        font-family: "Roboto", sans-serif;
+      }
+      .content {
+        grid-area: content;
+        margin: 20px;
+        background-color: whitesmoke;
+        padding: 20px;
+        border-radius: 40px;
+        text-align: center;
+      }
+      .back {
+        width: 150px;
+        height: 30px;
+        margin: 20px;
+        color: black;
+        background-color: white;
+        border-radius: 10px;
+        border: 2px solid rgb(94, 84, 233);
+        border-right: 2px solid rgb(94, 84, 233);
+        transition-duration: 0.5s;
+        margin: 0;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      .title {
+        grid-area: title;
+        text-align: center;
+      }
+
+      .title h1 {
+        font-size: 48px;
+      }
+
+      .title .underline {
+        display: inline-block;
+        border-bottom: 10px solid rgb(94, 84, 233);
       }
     </style>
     <script>
@@ -21,11 +64,10 @@
     </script>
   </head>
   <body>
-    <p style="font-size: 30pt">Autismos Plus</p>
-    <p>Please enter the password to view this website</p>
-    <p>Password:<input id="passwordBox" type="password" /></p>
+    <p class="content">Please enter the password to view this website</p>
+    <p class="content">Password:<input id="passwordBox" type="password" /></p>
     <a href="frontpage.html" onclick="return checkPassword();">
-      Click here to submit password and view website
+      <button class="back">Submit Password</button>
     </a>
   </body>
 </html>
